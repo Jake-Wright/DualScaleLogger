@@ -355,6 +355,7 @@ class gtkThread(threading.Thread):
         
     def weightExtraction(self, port):
         weight=''
+        buf=''
         for i in range(9):
             try:
                 buf=port.readline()
